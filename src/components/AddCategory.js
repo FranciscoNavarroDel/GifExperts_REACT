@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const AddCategory = ({ setCategories }) => {
   const [inputValue, setInputValue] = useState(
-    "Escriba una categoría a agregar"
+    ""
   );
 
   const handleInputChange = (e) => {
@@ -14,8 +14,9 @@ const AddCategory = ({ setCategories }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue.trim()) {
+    if (inputValue.trim().length>2) {
       setCategories((categories) => [ inputValue, ...categories]);
+      setInputValue("")
     }
   };
 

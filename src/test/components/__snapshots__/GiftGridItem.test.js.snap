@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba al item GiftGridItem debe mostrar el componente correctamente  1`] = `
+<div
+  className="card animate__animated animate__rotateIn "
+  key="1"
+>
+  <img
+    alt="probandoItem"
+    src="http//probando.cl"
+  />
+  <p>
+    probandoItem
+  </p>
+</div>
+`;
